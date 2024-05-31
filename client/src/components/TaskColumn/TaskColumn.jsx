@@ -15,15 +15,21 @@ export default function TaskColumn({
 }) {
   return (
     <section className="task_column">
+      {/* Displaying the title and icon of the column */}
       <h2 className="task_column_heading">
         <img className="task_column_icon" src={icon} alt=""></img>
         {title}
       </h2>
+
+      {/* DropArea component to allow dropping tasks */}
       <DropArea onDrop={() => onDrop(status, 0)} />
+
+      {/* Mapping through tasks to render TaskCard components */}
       {tasks.map(
         (task, index) =>
-          task.status === status && (
+          task.status === status && ( // Render TaskCard only if its status matches the column status
             <React.Fragment key={index}>
+              {/* Rendering TaskCard component */}
               <TaskCard
                 title={task.task}
                 description={task.description}
@@ -34,6 +40,7 @@ export default function TaskColumn({
                 handleStatusChange={handleStatusChange}
                 timestamp={task.timestamp}
               />
+              {/* DropArea component after each TaskCard */}
               <DropArea onDrop={() => onDrop(status, index + 1)} />
             </React.Fragment>
           )
