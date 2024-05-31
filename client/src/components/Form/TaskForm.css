@@ -1,0 +1,69 @@
+.app_header {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app_header > form {
+    width: 50%;
+  }
+  
+  .task_input,
+  .task_description {
+    font-size: 18px;
+    background: #f9f9f9;
+    color: #000;
+    border: 1px solid #dfe3e6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .task_input::placeholder,
+  .task_description::placeholder {
+    color: #686868;
+  }
+  
+  .task_form_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .task_status {
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    padding: 0 5px;
+    cursor: pointer;
+  }
+  
+  .task_submit {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #6457f9;
+    color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    padding: 3px 13px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .task_submit:hover {
+    color: #6457f9;
+    background-color: #fff;
+    border: 2px solid #6457f9;
+  }
+  

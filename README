@@ -1,0 +1,39 @@
+<!-- Step 1:- Unzip the file TO-DO-LIST.
+
+Step 2:- Go to the client folder inside TO-DO-LIST folder.
+cd client
+
+Step 3:- Install the dependencies using the command
+npm install
+inside the client folder.
+
+Step 4:- Run the code using the command
+npm run dev
+
+Description about the project:
+
+This dynamic to-do list application with three sections: To Do, In Progress, and
+Done. Users can add tasks, move tasks between sections, and optionally use
+drag-and-drop functionality.
+
+It has three sections
+1. To Do
+    Contains newly added tasks.
+    Each task has a button to move it to In Progress.
+2. In Progress
+    Contains tasks currently being worked on.
+    Each task has a button to move it to Completed.
+3. Done
+    Contains completed tasks with a timestamp in the format "DD/MM/YY, HH".
+
+Functions
+1. Add New Task
+    Users can add a task to the To Do section with a title and optional description.
+2. Move Tasks Between Sections
+    Tasks can be moved from:
+        Pending to In Progress
+        In Progress to Completed
+    Each task has a button for moving it to the next section.
+    Tasks in Completed get a timestamp when moved to this section.
+3. Drag and Drop
+    Users can drag and drop tasks between sections. -->
