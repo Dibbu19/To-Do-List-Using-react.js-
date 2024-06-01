@@ -4,20 +4,35 @@
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
   min-height: 100vh;
+  grid-template-areas:
+    "header"
+    "main";
 }
 
 .app_main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px 8%;
 }
 
 .task_column {
-  width: 30%;
-  margin: 20px;
+  width: 100%;
+  margin: 20px 0;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
+@media (min-width: 768px) {
+  .task_column {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .task_column {
+    width: 30%;
+  }
+}
